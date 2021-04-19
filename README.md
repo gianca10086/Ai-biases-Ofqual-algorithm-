@@ -16,6 +16,8 @@ b)The Ofqual algorithm tends to skew its predicted grades upwards and downwards,
 
 # II) Methodological approach:
 
+# We import the libraries 
+
 import pandas as pd
 import numpy as np
 
@@ -45,9 +47,10 @@ dt_2017 = dt_2017[dt_2017['Subject'] == 'History']
 dt_2018 = dt_2018[dt_2018['Subject'] == 'History']
 dt_2019 = dt_2019[dt_2019['Subject'] == 'History']
 
-# dt_2017 = dt_2017.head(100)
-# dt_2018 = dt_2018.head(100)
-# dt_2019 = dt_2019.head(100)
+    # dt_2017 = dt_2017.head(100)
+    # dt_2018 = dt_2018.head(100)
+    # dt_2019 = dt_2019.head(100)
+    
 
 # get unique list of schools in all years
 ls_schools = list(
@@ -60,13 +63,16 @@ ls_schools = list(
 dt_test = dt_2019
 
 # use year 2017-2018 to calculate historical grade distribution
+
 dt_historic = pd.concat([dt_2018, dt_2019])
 
-# config
+# configuarion
+
 ls_grades = ['A*', 'A', 'B', 'C', 'D', 'E', 'F']
 rj = 0.7
 
 # helper columns
+
 dt_test["F"] = dt_test["Fail/No results"]
 for grade in ls_grades:
     dt_test["R_" + grade] = dt_test[grade] / dt_test['Total entries']
@@ -76,11 +82,14 @@ for grade in ls_grades:
     dt_historic["R_" + grade] = dt_historic[grade] / \
         dt_historic['Total entries']
 
-# school table
+# We establish the school table
+
 dt_schools = pd.DataFrame(ls_schools, columns=['URN'])
 dt_schools["is_private"] = False
 
-# calculate C[k,j]
+
+# We calculate C[k,j]
+
 for grade in ls_grades:
     # dt_schools["Ckj_" + grade] = 0.0
     # dt_schools["qkj_" + grade] = 0.0
@@ -100,12 +109,17 @@ for idx in range(len(ls_schools)):
     remainder_q = 1
     remainder_p = 1
     for grade in ls_grades:
-        # calculate historical grade distribution values
+    
+        
+ # We calculate the historical grade distribution values
+ 
         Ckj_value = dt_school_historic['R_' + grade].mean()
         # dt_schools.at[idx, "Ckj_" + grade] = Ckj_value
 
         # generate made up data for predicted grades
-        # we assume that predicted grades are 20% higher then than actual grades
+       
+ # We assume that predicted grades are 20% higher then than actual grades
+ 
         R_value = dt_school_test['R_' + grade].iloc[0]
         if isinstance(R_value, float):
             # qkj - historic teacher prediction
@@ -118,7 +132,10 @@ for idx in range(len(ls_schools)):
             # dt_schools.at[idx, "pkj_" + grade] = value_p
 
         # this is weak assumption based on the expectation that GCSE
-        # grades will strongly correlate with A level marks
+        
+        
+ # grades will strongly correlate with A level marks
+ 
         pkj_value_GCSE = Ckj_value
         qkj_value_GCSE = R_value
 
@@ -131,17 +148,27 @@ for idx in range(len(ls_schools)):
         dt_schools.at[idx, "Pkj_error_" + grade] = Pkj_value - R_value
 
 
-# Pkj = (1-rj)Ckj + rj(Ckj + qkj - pkj)
+        # Pkj = (1-rj)Ckj + rj(Ckj + qkj - pkj)
+
 # The variables
-# n is the number of pupils in the subject being assessed
-# k is a specific grade
-# j indicates the school
-# C[k,j] is the historical grade distribution of grade at the school (centre) over the last three years, 2017-19.
-# q[k,j] is the predicted grade distribution based on the class’s prior attainment at GCSEs. A class with mostly 9s (the top grade) at GCSE will get a lot of predicted A*s; a class with mostly 1s at GCSEs will get a lot of predicted Us.
-# p[k,j] is the predicted grade distribution of the previous years, based on their GCSEs. You need to know that because, if previous years were predicted to do poorly and did well, then this year might do the same.
-# r[j] is the fraction of pupils in the class where historical data is available. If you can perfectly track down every GCSE result, then it is 1; if you cannot track down any, it is 0.
-# CAG is the centre assessed grade.
-# P[k,j] is the result, which is the grade distribution for each grade k at each school j.
+
+        # n is the number of pupils in the subject being assessed
+        
+        # k is a specific grade
+        
+        # j indicates the school
+        
+        # C[k,j] is the historical grade distribution of grade at the school (centre) over the last three years, 2017-19
+        
+        # q[k,j] is the predicted grade distribution based on the class’s prior attainment at GCSEs. A class with mostly 9s (the top grade) at GCSE will get a lot of predicted A*s; a class with mostly 1s at GCSEs will get a lot of predicted Us.
+        
+        # p[k,j] is the predicted grade distribution of the previous years, based on their GCSEs. You need to know that because, if previous years were predicted to do poorly and did well, then this year might do the same.
+        
+        # r[j] is the fraction of pupils in the class where historical data is available. If you can perfectly track down every GCSE result, then it is 1; if you cannot track down any, it is 0.
+        
+        # CAG is the centre assessed grade.
+        
+        # P[k,j] is the result, which is the grade distribution for each grade k at each school j.
 
 dt_private_schools = dt_schools[dt_schools['is_private']]
 dt_state_schools = dt_schools[dt_schools['is_private'] != True]
