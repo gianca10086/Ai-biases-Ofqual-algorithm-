@@ -241,7 +241,7 @@ H1. The algorithm either strongly pushes results downwards across all schools or
 
 a.	Our findings allow us to reject the hypothesis that the algorithm pushes results downwards.
 
-b.	We find that algorithm seems to raise grades slightly however. An effect that is a stronger for private schools (see the 3.69% increase as opposed to 1.43% for state schools), however, given that we are below 5% differences, statistical relevance is low.
+b.	We find that algorithm seems to raise grades slightly compared to the actual obtained A-level results in 2019. An effect that is a stronger for private schools (see the 3.69% increase compared to 1.43% for state schools). However, given that we are below 5% differences, statistical relevance is low.
 
 # IV) Limitations of the study:  
 
