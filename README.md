@@ -2,7 +2,7 @@
 
 # I) Introduction: 
 
-In 2020, Ofqual, the English regulator of qualifications, exams and tests in England produced an algorithm trying to combat glade inflation and moderate teacher-predicted grades for A levels, after examinations were cancelled in the COVID-19 pandemic. Teachers found that nearly 40% of their A-levels assessments downgraded by the algorithm (Adams et al. 2020) and independent schools were favoured disproportionately above publicly funded schools (Haines 2020; Nye and Thompson 2020).
+In 2020, Ofqual, the English regulator of qualifications, exams and tests in England produced an algorithm trying to combat glade inflation and moderate teacher-predicted grades for A levels, after examinations were cancelled in the COVID-19 pandemic.
 
 The algorithm, officially titled "Ofqual's Direct Centre Performance model" works as follows. It is based on the record of school being assessed. Firstly, the examination centre of each school provides a list of teacher predicted grades (centre assessed grades, CAGs). The students of each class is then placed in rank order on the basis of their predicted grade. Secondly, for classes with more than 15 students, the historical results of the school were also consulted. Going back three years, the average number of students getting each grade (A*, A, B, C, D, E, and U, with A* being the highest attainable and U denoting "unclassified, or in other words "fail") is being added into the calculation. Thirdly, if this data was available, the calculation could be further enhanced on the basis of the historical data of the class's prior attainment in their GSCE's. (Hern 2020b).
 
@@ -249,7 +249,7 @@ Firstly, the study unfortunately lacked a non-negligible amount of real historic
 
 Secondly, the predicted grades data were not published by the government. Where the predicted grades are officially based on GCSE results, which are available, it is worth noting that pupil movement between KS4 (GCSEs) and KS% (A-levels) between schools would make the historical GCSE data only partially accurate. That being said, had we had more time, we would have used school GCSE data as the next best option in our calculations. 
 
-Thirdly, because of the low differences between the different grade distributions for private and state schools, the results in this study can not be generalised. Nevertheless, the findings of our study co-align with earlier studies that analysed the Ofqual algorithm (Haines 2020; Hern 2020a; Hern 2020b; Birch 2020; James 2020)
+Thirdly, because of the low differences between the different grade distributions for private and state schools, the results in this study can not be generalised. Nevertheless, the findings of our study co-align with earlier studies that analysed the Ofqual algorithm (Haines 2020; Hern 2020a; Hern 2020b; Birch 2020; James 2020; Nye and Thompson 2020).
 
 # V) Implications and suggestions for further research:
 
