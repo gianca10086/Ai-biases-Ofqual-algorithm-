@@ -116,10 +116,9 @@ Our Hypothesis was that the algorithm was either strongly push results downwards
 
         
        
- # Calculate predicted grades
+ # Creation of predicted data (proxy data) 
  
-These were not published by the UK government but based on Ofqual’s own studies, we assumed that in normal times, predicted grades are about 20% higher than actual grades, this is based on the unsubstantiated but presumed assumption that GCSE grades, on which predicted grades are usually based, correlate strongly with A level results
-
+As the real grades for 2020 werent published by the UK government, we decided to predict them based on Ofqual’s own studies, we assumed that in normal times, predicted grades are about 20% higher than actual grades, this is based on the unsubstantiated but presumed assumption that GCSE grades, on which predicted grades are usually based, correlate strongly with A level results
  
         R_value = dt_school_test['R_' + grade].iloc[0]
         if isinstance(R_value, float):
@@ -138,7 +137,7 @@ These were not published by the UK government but based on Ofqual’s own studie
         qkj_value_GCSE = R_value
         
  
- # predicted 2019 Grades will strongly correlate with A level marks
+ # Predicted 2019 grades will strongly correlate with A level marks
  
 
         # Pkj
