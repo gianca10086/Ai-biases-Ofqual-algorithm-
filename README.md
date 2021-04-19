@@ -237,9 +237,9 @@ c.	Independent schools have more missing data, which makes the calculation of di
 
 # IV) Limitations of the study:  
 
-The study unfortunately lacked a non negligeable amount of real historical data. A lot of schools couldn't by law publish their data as some classes were simply too small, which could have had some drawbacks in terms of the privacy of the concerned studenst, who would have likely been recognized by their results. This eventually forced us to resort to use an abundant amount of proxy data.
+The study unfortunately lacked a non negligeable amount of real historical data. A lot of schools couldn't by law publish their data as some classes were simply too small, which could have had some drawbacks in terms of the privacy of the concerned studenst, who would have likely been recognized by their results. This eventually forced us to resort to use an abundant amount of proxy data. It becomes clear that as well a relative lack of independent school data makes results less accurate and might (although not necessarily) hide a greater advantage. 
 
-For instance the overprediction and underprediction of grades were based in the assumptions made by former Ofqual studies were it was assumed that ojn average teachers tended to over predicted thei won students grades by 20 to 40% higher compared to what they would iodeally score at the exam.
+For instance the overprediction and underprediction of grades were based in the assumptions made by former Ofqual studies were it was assumed that on average teachers tended to over predicted thei won students grades by 20 to 40% higher compared to what they would iodeally score at the exam.
 
 Predicted grades data: these were not published by the government although officially were based on GCSE results. GCSE results are available although it is worth noting that pupil movement between KS4 (GCSEs) and KS% (A-levels) between schools would make the historical GCSE data only partially accurate. That being said, had we had more time, we would have used school GCSE data as the next best option in our calculations. 
 
@@ -248,17 +248,15 @@ Predicted grades data: these were not published by the government although offic
 
 > Policy Implications 
 
-a. We find, although statistically insignificant, some evidence that the algorithm slightly advantages independent schools. This is a finding in line with earlier assessment of the algorithm done (Haines 2020).
+a.  We find, although statistically insignificant, some evidence that the algorithm slightly advantages independent schools. This is a finding in line with earlier studies of the algorithm (Haines 2020).
 
-b.	Relative lack of independent school data makes results less accurate and might (although not necessarily) hide a greater advantage. 
-
-c.	15 pupil limit for using CAG (teacher predicted grades) is a clear advantage to schools with small class sizes, which is very substantially more common among independent schools
+b.  15 pupil limit for using CAG (teacher predicted grades) is a clear advantage to schools with small class sizes, which is very substantially more common among independent schools.
 
 d.	Even if the algorithm is not significantly biased in its treatment of independent and state schools, it must be stressed that the schools-based allocation of grades to individual students is enormously inappropriate. Pupils are graded by their statistical background, not their own work and merit. Much like with criminal justice, one cannot do away with trial based on the individual case/personal actions in favour of just sentencing anyone who is ‘statistically likely’ to commit a crime. This approach makes it impossible for students from unlikely/disadvantaged students to significantly outperform their predictions, even though this happens, especially among immigrant students who tend to attend state schools. 
 
 All in all, it is the assigning life-changing grades to individuals based on statistical data that makes this policy and therefore the algorithm inappropriate. Algorithms and AI have great potential to aid governments but it must be realised that not all governmental functions are suitable for automatisation. 
 
->  Suggestions 
+>  Suggestions for further research
 
 a. Since we only based our studies on students results in history it could be potentially enriching to apply the algorithm for other school subjects and determine whether certain subjects are more affected than others. For example, the Guardian found that the algorithm has different accuracy levels for the subjects "English" and "Maths" (Hern 2020).
 
