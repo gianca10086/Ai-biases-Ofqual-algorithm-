@@ -88,9 +88,6 @@ b)The Ofqual algorithm tends to skew its predicted grades upwards and downwards,
        dt_historic["R_" + grade] = dt_historic[grade] / \
           dt_historic['Total entries']
 
-
-# We establish the school table
-
     dt_schools = pd.DataFrame(ls_schools, columns=['URN'])
     dt_schools["is_private"] = False
 
@@ -125,7 +122,9 @@ b)The Ofqual algorithm tends to skew its predicted grades upwards and downwards,
 
         # generate made up data for predicted grades
        
- # We assume that predicted grades are 20% higher then than actual grades
+ # Creation of predicted data (proxy data) 
+ 
+As the real grades for 2020 werent published by the UK government, we decided to predicte them based on Ofqual’s own studies, we assumed that in normal times, predicted grades are about 20% higher than actual grades, this is based on the unsubstantiated but presumed assumption that GCSE grades, on which predicted grades are usually based, correlate strongly with A level results
  
         R_value = dt_school_test['R_' + grade].iloc[0]
         if isinstance(R_value, float):
@@ -157,7 +156,9 @@ b)The Ofqual algorithm tends to skew its predicted grades upwards and downwards,
         # Pkj = (1-rj)Ckj + rj(Ckj + qkj - pkj)
 
 
-# The variables
+# The algorithm 
+
+We established the algorithm based on the following variables
 
         # n is the number of pupils in the subject being assessed
         
@@ -178,7 +179,7 @@ b)The Ofqual algorithm tends to skew its predicted grades upwards and downwards,
         # P[k,j] is the result, which is the grade distribution for each grade k at each school j.
 
 
-# We identify and divide the schools into the categories into which they are registered 
+# Identify and divide schools into private and public 
 
      dt_private_schools = dt_schools[dt_schools['is_private']]
      dt_state_schools = dt_schools[dt_schools['is_private'] != True]
@@ -192,7 +193,7 @@ b)The Ofqual algorithm tends to skew its predicted grades upwards and downwards,
         "{:.2%}".format(dt_state_schools['Pkj_error_' + grade].mean()),
     
 
-# Finally we predicted the overall amount of missing data for each school category
+# Calculate overall missing data percentage differences between private and state schools
 
       percent_missing = dt_private_schools.isnull().sum() / \
            len(dt_private_schools)
