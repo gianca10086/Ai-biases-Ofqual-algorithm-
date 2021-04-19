@@ -246,12 +246,9 @@ Predicted grades data: these were not published by the government although offic
 
 # V) Implications and suggestions for further research:
 
-
-Despite some partial limitations till found how the algorithm indeed tends to be biased towards private schools. This is problematic because this... 
-
 > Policy Implications 
 
-a. Finding: some (but statistically not too significant) evidence that the algorithm slightly advantages independent schools
+a. We find, although statistically insignificant, some evidence that the algorithm slightly advantages independent schools. This is a finding in line with earlier assessment of the algorithm done (Haines 2020).
 
 b.	Relative lack of independent school data makes results less accurate and might (although not necessarily) hide a greater advantage. 
 
@@ -278,7 +275,9 @@ We are especially grateful for Tom Haines and Peter Kemp who have very kindly he
 
 # Sources:
 
-Adams et al. (2020). A-level results: almost 40% of teacher assessments in England downgraded. The Guardian. Available online at: https://www.theguardian.com/education/2020/aug/13/almost-40-of-english-students-have-a-level-results-downgraded
+Adams et al. (2020). A-level results: almost 40% of teacher assessments in England downgraded. The Guardian. Available online at: https://www.theguardian.com/education/2020/aug/13/almost-40-of-english-students-have-a-level-results-downgraded.
+
+Haines, T. S. F. (2020). A-Levels: The Model is not the Student. Personal blog. Available online at: https://thaines.com/post/alevels2020.
 
 Hern, A. (2020). Do the maths: why England's A-level grading system is unfair. The Guardian. Available online at: https://www.theguardian.com/education/2020/aug/14/do-the-maths-why-englands-a-level-grading-system-is-unfair
 
@@ -289,11 +288,3 @@ Quinn, B. and Adams, R. (2020). England exam rows timeline: was Ofqual warned of
 Wikipedia (2021). Ofqual exam results algorithm. Available online at: https://en.wikipedia.org/wiki/Ofqual_exam_results_algorithm
 
 Data: https://www.compare-school-performance.service.gov.uk/download-data?currentstep=region&downloadYear=2016-2017&regiontype=all&la=0
-
-
-
-
-
-
-
-
