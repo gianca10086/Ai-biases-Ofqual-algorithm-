@@ -4,19 +4,9 @@
 
 In 2020, Ofqual, the English regulator of qualifications, exams and tests in England produced an algorithm trying to combat glade inflation and moderate teacher-predicted grades for A levels, after examinations were cancelled in the COVID-19 pandemic. Teachers found that nearly 40% of their A-levels assessments downgraded by the algorithm (Adams et al. 2020) and independent schools were favoured disporportionately above publicly funded schools (Nye and Thompson 2020).
 
-In a nutshell, the algorithm, officially titled "Ofqual's Direct Centre Performance model" works as follows. It is based on the record of school being assessed. Firstly, the examination centre of each school provides a list of teacher predicted grades (centre assessed grades, CAGs). The students of each class were then placed in rank order on the basis of their predicted grade. Secondly, for classes with more than 15 students, the historical results of the school were also consulted. Going back three years, the average number of students getting each grade (A*, B, C, D, E, U, with A* being the highest attainable and U denoting "unclassified, or in other words "fail") is being added into the calculation. Thirdly, if this data was available, the calculation could be further enhanced on the basis of previous personal historic data of the classe's prior attainment 
+The algorithm, officially titled "Ofqual's Direct Centre Performance model" works as follows. It is based on the record of school being assessed. Firstly, the examination centre of each school provides a list of teacher predicted grades (centre assessed grades, CAGs). The students of each class were then placed in rank order on the basis of their predicted grade. Secondly, for classes with more than 15 students, the historical results of the school were also consulted. Going back three years, the average number of students getting each grade (A*, B, C, D, E, U, with A* being the highest attainable and U denoting "unclassified, or in other words "fail") is being added into the calculation. Thirdly, if this data was available, the calculation could be further enhanced on the basis of the historical data of the class's prior attainment 
 
- ... The different variables are defined and explained in the second part.
-
-- aim of our study 
-
-- hypotheses
-
-a) The Ofqual algorithm tends to predict higher grades for private school students than for state school students, regardless of these students' personal historical performance track record.
-
-b)The Ofqual algorithm tends to skew its predicted grades upwards and downwards, hollowing out the middle of the grade distribution. (This is practically what Haines found, we could just argue here that we wanted to replicate this, see if it works for us as well).
-
-
+Our Hypothesis was that the algorithm was either strongly push results downwards across all schools or push the results of independent schools upwards. We found that the algorithm had a tendency to push results upwards. There was a slightly stronger upward trend for independent schools, but this was not statistically greatly significant, however, given that very small classes’ data were masked by the government for data protection reasons, almost 2x as many independent schools’ data was missing from the calculation than maintained school data, indicating that the difference might be stronger in real life.
 
 # II) Methodological approach:
 
