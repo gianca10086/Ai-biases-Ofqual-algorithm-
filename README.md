@@ -151,7 +151,7 @@ These were not published by the UK government but based on Ofqual’s own studie
 
 # The algorithm 
 
-We established the algorithm based on the following variables
+The algorithm is defined as follows:
 
         # n is the number of pupils in the subject being assessed
         
