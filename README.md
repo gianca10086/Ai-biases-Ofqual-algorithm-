@@ -20,7 +20,7 @@ b)The Ofqual algorithm tends to skew its predicted grades upwards and downwards,
 
 # II) Methodological approach:
 
-# We import the libraries 
+# import the relevant libraries 
 
     import pandas as pd
     import numpy as np
@@ -42,7 +42,7 @@ b)The Ofqual algorithm tends to skew its predicted grades upwards and downwards,
        'Fail/No results': 'float'
     }
 
-# We load the data files
+# load the data files (historical school and subject data from England and Wales, from 2017 to 2019 )
 
     dt_2017 = pd.read_csv("data-2017.csv", dtype=type_descriptor)
     dt_2018 = pd.read_csv("data-2018.csv", dtype=type_descriptor)
@@ -64,19 +64,20 @@ b)The Ofqual algorithm tends to skew its predicted grades upwards and downwards,
         set(dt_2019['URN'].unique())
      )
 
-# use 2019 data as test data
+# use 2019 data as test data (as 2020 results are unvailable)
+
     dt_test = dt_2019
 
-# use year 2017-2018 to calculate historical grade distribution
+# se year 2017-2018 to calculate historical grade distribution
 
     dt_historic = pd.concat([dt_2018, dt_2019])
 
-# configuarion
-
-    ls_grades = ['A*', 'A', 'B', 'C', 'D', 'E', 'F']
+ ls_grades = ['A*', 'A', 'B', 'C', 'D', 'E', 'F']
     rj = 0.7
 
-# helper columns
+# Creation and configuarion of table 
+
+    # helper columns
 
     dt_test["F"] = dt_test["Fail/No results"]
        for grade in ls_grades:
@@ -86,6 +87,7 @@ b)The Ofqual algorithm tends to skew its predicted grades upwards and downwards,
     for grade in ls_grades:
        dt_historic["R_" + grade] = dt_historic[grade] / \
           dt_historic['Total entries']
+
 
 # We establish the school table
 
