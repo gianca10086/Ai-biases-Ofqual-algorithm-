@@ -263,7 +263,7 @@ All in all, it is the assigning life-changing grades to individuals based on sta
 
 >  Suggestions 
 
-a. Since we only based our studies on students results in history it could be potentially enriching to apply the algorithm for other school subjects and determine whether certain subjects are more affected than others.
+a. Since we only based our studies on students results in history it could be potentially enriching to apply the algorithm for other school subjects and determine whether certain subjects are more affected than others. For example, the Guardian found that the algorithm has different accuracy levels for the subjects "English" and "Maths" (Hern 2020).
 
 b. Ofqual is only on example among others. So it would also be interested to make a cross comparison between different countries educational algorithm's systems. We could for instance take the example of the former APB algorith in France. 
 
@@ -279,6 +279,8 @@ We are especially grateful for Tom Haines and Peter Kemp who have very kindly he
 # Sources:
 
 Adams et al. (2020). A-level results: almost 40% of teacher assessments in England downgraded. The Guardian. Available online at: https://www.theguardian.com/education/2020/aug/13/almost-40-of-english-students-have-a-level-results-downgraded
+
+Hern, A. (2020). Do the maths: why England's A-level grading system is unfair. The Guardian. Available online at: https://www.theguardian.com/education/2020/aug/14/do-the-maths-why-englands-a-level-grading-system-is-unfair
 
 Nye, P. and Thomson, D. (2020). A-level results 2020: Why independent schools have done well out of this year's awarding process. FFT Education Datalab. Available online here: https://ffteducationdatalab.org.uk/2020/08/a-level-results-2020-why-independent-schools-have-done-well-out-of-this-years-awarding-process/
 
