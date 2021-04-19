@@ -1,8 +1,11 @@
 # Ai-biases-Ofqual-algorithm-
 
-# I) Intrododuction: 
+# I) Introduction: 
+# In 2020, Ofqual, the English regulator of qualifications, exams and tests in England produced an algorithm trying to combat glade inflation and moderate teacher-predicted grades for A levels, after examinations were cancelled in the COVID-19 pandemic. Teachers found that nearly 40% of their A-levels assessments downgraded by the algorithm (Adams et al. 2020) and independent schools were favoured disporportionately above publicly funded schools (Nye and Thompson 2020).
 
-- problem statement 
+# In a nutshell, the algorithm, officially titled "Ofqual's Direct Centre Performance model" works as follows. It is based on the record of school being assessed. Firstly, the examination centre of each school provides a list of teacher predicted grades (centre assessed grades, CAGs). The students of each class were then placed in rank order on the basis of their predicted grade. Secondly, for classes with more than 15 students, the historical results of the school were also consulted. Going back three years, the average number of students getting each grade (A*, B, C, D, E, U, with A* being the highest attainable and U denoting "unclassified, or in other words "fail") is being added into the calculation. Thirdly, if this data was available, the calculation could be further enhanced on the basis of previous personal historic data of the classe's prior attainment 
+
+... The different variables are defined and explained in the second part.
 
 - aim of our study 
 
@@ -235,9 +238,6 @@ Based on the precedent results which hypothesis can we confirm and which one can
 
 - we can accept the first: 
 
-This means that a student is more likely to be judged by the overall performance  of its school during time of its school (historical distribution = CKj) instead of its own performance.
-
-
 - We partially accept the second (in our results the algorithm only skews the distribution upwards and does not hollow out the middle).
 
 
@@ -262,10 +262,23 @@ Immorality  1 : we cant stigmatise the performance of one student and its leavel
 Immmorality 2 : This system stromgly favors a reproduction of the elites and further enhances the class homogeneoty in each schools as parents who have teh necessary fiancnail capaqbilities will make everything in their power to bring their children in elite private schools. 
 
 
-
 > Suggestions 
 
 
+# Acknowledgments
+# Gabor Győrfi, Tom Haines (University of Bath) and Peter Kemp (King's College London).
+
+# Sources:
+
+# Adams et al. (2020). A-level results: almost 40% of teacher assessments in England downgraded. The Guardian. Available online at: https://www.theguardian.com/education/2020/aug/13/almost-40-of-english-students-have-a-level-results-downgraded
+
+# Nye, P. and Thomson, D. (2020). A-level results 2020: Why independent schools have done well out of this year's awarding process. FFT Education Datalab. Available online here: https://ffteducationdatalab.org.uk/2020/08/a-level-results-2020-why-independent-schools-have-done-well-out-of-this-years-awarding-process/
+
+# Quinn, B. and Adams, R. (2020). England exam rows timeline: was Ofqual warned of algorithm bias? https://www.theguardian.com/education/2020/aug/20/england-exams-row-timeline-was-ofqual-warned-of-algorithm-bias
+
+# Wikipedia (2021). Ofqual exam results algorithm. Available online at: https://en.wikipedia.org/wiki/Ofqual_exam_results_algorithm
+
+# Data: https://www.compare-school-performance.service.gov.uk/download-data?currentstep=region&downloadYear=2016-2017&regiontype=all&la=0
 
 
 
