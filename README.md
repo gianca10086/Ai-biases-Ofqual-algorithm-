@@ -63,7 +63,7 @@ Our study underlines the relevance of a thorough ethicial assessment of algorith
         set(dt_2019['URN'].unique())
      )
 
-# Use 2019 data as the test data (as 2020 results are unvailable)
+# Use 2019 data as the test data (as 2020 results are unavailable)
 
     dt_test = dt_2019
 
