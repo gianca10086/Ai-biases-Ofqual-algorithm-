@@ -49,7 +49,7 @@ Our Hypothesis was that the algorithm was either strongly push results downwards
     # dt_2019 = dt_2019.head(100)
     
 
-# Get unique list of schools in all years
+# Link school to unique ID number  
     ls_schools = list(
         set(dt_2017['URN'].unique()) &
         set(dt_2018['URN'].unique()) &
