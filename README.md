@@ -226,16 +226,9 @@ We established the algorithm based on the following variables
 
 > Missing data (state schools) 16.50%
 
-
-
-Based on the precedent results which hypothesis can we confirm and which one can we reject? 
-
-- we can accept the first: 
-
-- We partially accept the second (in our results the algorithm only skews the distribution upwards and does not hollow out the middle).
-
-
-
+a.	We reject the hypothesis that the algorithm pushes results downwards
+b.	We find that algorithm seems to raise grades slightly however, this effect is a stronger for private schools (see the 3.69% increase in As as opposed to 1.43% for state schools), however, given that we are below 5% differences, statistical relevance is low. 
+c.	Independent schools have more missing data, which makes the calculation of difference between their predicted and actual 2019 grades less accurate.
 
 # IV) Limitations of the study:  
 
