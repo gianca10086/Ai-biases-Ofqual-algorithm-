@@ -1,4 +1,4 @@
-# Decoding-Biases in AI: the Ofqual algorithm scandal
+# Decoding Biases in AI: the Ofqual algorithm scandal
 
 # I) Introduction: 
 
