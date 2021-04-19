@@ -261,17 +261,19 @@ Despite some partial limitations till found how the algorithm indeed tends to be
 
 > Implications 
 
-Immorality  1 : we cant stigmatise the performance of one student and its leavel of dedication to study based on the environement in which he has was raised. This would jeopardize the idea of meritocracy (which is already widely put into question)
+Finding: some (but statistically not too significant) evidence that the algorithm slightly advantages independent schools
+b.	Relative lack of independent school data makes results less accurate and might (although not necessarily) hide a greater advantage. 
+c.	15 pupil limit for using CAG (teacher predicted grades) is a clear advantage to schools with small class sizes, which is very substantially more common among independent schools
+d.	Policy Implications: even if the algorithm is not significantly biased in its treatment of independent and state schools, it must be stressed that the schools-based allocation of grades to individual students is enormously inappropriate. Pupils are graded by their statistical background, not their own work and merit. Much like with criminal justice, one cannot do away with trial based on the individual case/personal actions in favour of just sentencing anyone who is ‘statistically likely’ to commit a crime. This approach makes it impossible for students from unlikely/disadvantaged students to significantly outperform their predictions, even though this happens, especially among immigrant students who tend to attend state schools. 
 
-Immmorality 2 : This system stromgly favors a reproduction of the elites and further enhances the class homogeneoty in each schools as parents who have teh necessary fiancnail capaqbilities will make everything in their power to bring their children in elite private schools. 
-
+All in all, it is the assigning life-changing grades to individuals based on statistical data that makes this policy and therefore the algorithm inappropriate. Algorithms and AI have great potential to aid governments but it must be realised that not all governmental functions are suitable for automatisation. 
 
 > Suggestions 
 
 
 # Acknowledgments
-
-Gabor Győrfi, Tom Haines (University of Bath) and Peter Kemp (King's College London).
+# Gabor Győrfi, Tom Haines (University of Bath) and Peter Kemp (King's College London).
+We are especially grateful for Tom Haines and Peter Kemp who have very kindly helped to point us in the right direction regarding available datasets and Gabor Gyorfi who very kindly helped us get started with Visual Studio Code and some of the more advanced aspects of Python coding.
 
 # Sources:
 
