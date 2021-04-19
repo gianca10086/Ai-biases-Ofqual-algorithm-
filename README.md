@@ -135,9 +135,6 @@ As the real grades for 2020 werent published by the UK government, we decided to
         
         pkj_value_GCSE = Ckj_value
         qkj_value_GCSE = R_value
-        
- 
- # Predicted 2019 grades will strongly correlate with A level marks
  
 
         # Pkj
