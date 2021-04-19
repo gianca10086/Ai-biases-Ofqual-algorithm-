@@ -118,7 +118,7 @@ Our Hypothesis was that the algorithm was either strongly push results downwards
        
  # Creation of predicted data (proxy data) 
  
-As the real grades for 2020 werent published by the UK government, we decided to predicte them based on Ofqual’s own studies, we assumed that in normal times, predicted grades are about 20% higher than actual grades, this is based on the unsubstantiated but presumed assumption that GCSE grades, on which predicted grades are usually based, correlate strongly with A level results
+As the real grades for 2020 werent published by the UK government, we decided to predict them based on Ofqual’s own studies, we assumed that in normal times, predicted grades are about 20% higher than actual grades, this is based on the unsubstantiated but presumed assumption that GCSE grades, on which predicted grades are usually based, correlate strongly with A level results
  
         R_value = dt_school_test['R_' + grade].iloc[0]
         if isinstance(R_value, float):
@@ -136,7 +136,9 @@ As the real grades for 2020 werent published by the UK government, we decided to
         pkj_value_GCSE = Ckj_value
         qkj_value_GCSE = R_value
         
- # Grades will strongly correlate with A level marks
+ 
+ # predicted 2019 Grades will strongly correlate with A level marks
+ 
 
         # Pkj
         Pkj_value = pkj_value
@@ -236,9 +238,11 @@ c.	Independent schools have more missing data, which makes the calculation of di
 
 # IV) Limitations of the study:  
 
-The study unfortunately lacked a non negligeable amount of real historical data. A lot of schools coulsnt by law publish their data as some classes were simply too small, which could have had some drawbacks in terms of the privacy of the concerned studenst, who would have likely been recognized in their results. This eventually forced us to resort us to use an abundant amount of proxy data, whihc we adapted to observations and precent studies 
+The study unfortunately lacked a non negligeable amount of real historical data. A lot of schools couldn't by law publish their data as some classes were simply too small, which could have had some drawbacks in terms of the privacy of the concerned studenst, who would have likely been recognized in their results. This eventually forced us to resort us to use an abundant amount of proxy data, whihc we adapted to observations and precent studies 
 
-For instance the overprediction and underprediction of grades were based in the assumptions made by former studies (quote study) were it was assumed that ojn average teachers tended to over predicted thei won students grades by 20 to 40% higher compeared to what they would iodeally score at the exam.
+For instance the overprediction and underprediction of grades were based in the assumptions made by former studies (quote study) were it was assumed that ojn average teachers tended to over predicted thei won students grades by 20 to 40% higher compared to what they would iodeally score at the exam.
+
+Predicted grades data: these were not published by the government although officially were based on GCSE results. GCSE results are available although it is worth noting that pupil movement between KS4 (GCSEs) and KS% (A-levels) between schools would make the historical GCSE data only partially accurate. That being said, had we had more time, we would have used school GCSE data as the next best option in our calculations. 
 
 
 # V) Implications and suggestions for further research:
