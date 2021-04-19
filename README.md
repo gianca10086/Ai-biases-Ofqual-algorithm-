@@ -49,7 +49,8 @@ Our Hypothesis was that the algorithm was either strongly push results downwards
     # dt_2019 = dt_2019.head(100)
     
 
-# Link school to unique ID number  
+# Link schools to unique ID number  
+
     ls_schools = list(
         set(dt_2017['URN'].unique()) &
         set(dt_2018['URN'].unique()) &
@@ -67,9 +68,7 @@ Our Hypothesis was that the algorithm was either strongly push results downwards
  ls_grades = ['A*', 'A', 'B', 'C', 'D', 'E', 'F']
     rj = 0.7
 
-# Creation and configuarion of table 
-
-    # helper columns
+# Create helper columns
 
     dt_test["F"] = dt_test["Fail/No results"]
        for grade in ls_grades:
