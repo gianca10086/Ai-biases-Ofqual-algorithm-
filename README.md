@@ -142,7 +142,7 @@ As the real grades for 2020 werent published by the UK government, we decided to
         pkj_value_GCSE = Ckj_value
         qkj_value_GCSE = R_value
         
- # grades will strongly correlate with A level marks
+ # Grades will strongly correlate with A level marks
 
         # Pkj
         Pkj_value = pkj_value
@@ -273,7 +273,9 @@ All in all, it is the assigning life-changing grades to individuals based on sta
 
 
 # Acknowledgments
-# Gabor Győrfi, Tom Haines (University of Bath) and Peter Kemp (King's College London).
+
+Gabor Győrfi, Tom Haines (University of Bath) and Peter Kemp (King's College London).
+
 We are especially grateful for Tom Haines and Peter Kemp who have very kindly helped to point us in the right direction regarding available datasets and Gabor Gyorfi who very kindly helped us get started with Visual Studio Code and some of the more advanced aspects of Python coding.
 
 # Sources:
