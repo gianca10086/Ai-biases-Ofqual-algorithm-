@@ -267,7 +267,7 @@ a. Since we only based our studies on students results in history it could be po
 
 b. Ofqual is only on example among others. So it would also be interested to make a cross comparison between different countries's educational algorithm's systems. We could for instance take the example of the former APB algorith in France. 
 
-c. Finally we excluively based our comparison on the binary distinction between independent/ private schools and state schools. It would therefore appropriate to enlarge this analysis and make a more detailed separation between schools types. 
+c. Finally we exclusively based our comparison on the binary distinction between independent/ private schools and state schools. Therefore It would be appropriate to enlarge this analysis and make a more detailed separation between schools types. 
 
 
 # Acknowledgments
