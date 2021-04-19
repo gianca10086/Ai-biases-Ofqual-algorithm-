@@ -1,10 +1,20 @@
-# Ai-biases-GSCE/A level-algorithm-
+# Ai-biases-Ofqual-algorithm-
+
+# I) Intrododuction: 
+
+- problem statement 
+
+- aim of our study 
+
+- hypotheses
+
+a) The Ofqual algorithm tends to predict higher grades for private school students than for state school students, regardless of these students' personal historical performance track record.
+
+b)The Ofqual algorithm tends to skew its predicted grades upwards and downwards, hollowing out the middle of the grade distribution. (This is practically what Haines found, we could just argue here that we wanted to replicate this, see if it works for us as well).
 
 
-I) Intrododuction: 
 
-
-II) Methodological approach:
+# II) Methodological approach:
 
 import pandas as pd
 import numpy as np
@@ -163,22 +173,57 @@ dt_schools.to_csv('test.csv')
 
 
 
-III) Overall Results:
-
-- which hypothesis we can confirm or need to reject? 
+# III) Overall Results:
 
 
+> Prediction error 
+
+A* private: 1.45% state: 0.36%
+A private: 3.69% state: 1.43%
+B private: 2.17% state: 2.90%
+C private: -3.36% state: 0.67%
+D private: -3.19% state: -3.05%
+E private: -1.03% state: -2.04%
+F private: -0.26% state: -0.54%
+
+> Missing data (private schools) 28.54%
+
+> Missing data (state schools) 16.50%
+
+
+
+Based on the precedent results which hypothesis can we confirm and which one can we reject? 
+
+- we can accept the first: 
+
+- We partially accept the second (in our results the algorithm only skews the distribution upwards and does not hollow out the middle).
 
 
 
 
+# IV) Limitations of the study:  
 
-IV) Limitations of the study:  
+The study unfortunately lacked a non negligeable amount of real historical data. A lot of schools coulsnt by law publish their data as some classes were simply too small, which could have had some drawbacks in terms of the privacy of the concerned studenst, who would have likely been recognized in their results. This eventually forced us to resort us to use an abundant amount of proxy data, whihc we adapted to observations and precent studies 
+
+For instance the overprediction and underprediction of grades were based in the assumptions made by former studies (quote study) were it was assumed that ojn average teachers tended to over predicted thei won students grades by 20 to 40% higher compeared to what they would iodeally score at the exam.
+
+
+# V) Implications and suggestions for further research:
+
+
+Despite some partial limitations till found how the algorithm indeed tends to be biased towards private schools. This is problematic because this... 
+
+> Implications 
+
+Immorality  1 : we cant stigmatise the performance of one student and its leavel of dedication to study based on the environement in which he has was raised. This would jeopardize the idea of meritocracy (which is already widely put into question)
+
+Immmorality 2 : This system stromgly favors a reproduction of the elites and further enhances the class homogeneoty in each schools as parents who have teh necessary fiancnail capaqbilities will make everything in their power to bring their children in elite private schools. 
 
 
 
+> Suggestions 
 
-V)Implications and suggestions for further research:
+
 
 
 
