@@ -18,25 +18,25 @@ b)The Ofqual algorithm tends to skew its predicted grades upwards and downwards,
 
 # We import the libraries 
 
-import pandas as pd
-import numpy as np
+    import pandas as pd
+    import numpy as np
 
-type_descriptor = {
-    'year': 'int',
-    'Qualification': 'string',
-    'Local Authority': 'string',
-    'URN': 'string',
-    'School or college name': 'string',
-    'School or college type': 'string',
-    'Subject': 'string',
-    'A*': 'float',
-    'A': 'float',
-    'B': 'float',
-    'C': 'float',
-    'D': 'float',
-    'E': 'float',
-    'Fail/No results': 'float'
-}
+    type_descriptor = {
+       'year': 'int',
+       'Qualification': 'string',
+       'Local Authority': 'string',
+       'URN': 'string',
+       'School or college name': 'string',
+       'School or college type': 'string',
+       'Subject': 'string',
+       'A*': 'float',
+       'A': 'float',
+       'B': 'float',
+       'C': 'float',
+       'D': 'float',
+       'E': 'float',
+       'Fail/No results': 'float'
+    }
 
 # We load the data files
 
