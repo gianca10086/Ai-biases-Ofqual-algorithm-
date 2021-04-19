@@ -12,7 +12,7 @@ H1. The algorithm either strongly pushes results downwards across all schools or
 
 The main finding of our analysis is that the algorithm had a tendency to push results upwards. There was a slightly stronger upward trend for independent schools, but this was not statistically greatly significant. However, given that very small classes’ data were masked by the government for data protection reasons, almost 2x as many independent schools’ data was missing from the calculation than maintained school data, indicating that the difference might be stronger in real life.
 
-Our study underlines the relevance of a thorhough ethicial assessment of algorithms used by both public and private institutions, _especially_ in an educational setting. In addition, it brings again under attention the relevance of adequate technical training and digital skills of public administration officials who are, in case of lack of knowledge, often still highly depend on third party providers that might have less for the ethical implications of their algorithm.
+Our study underlines the relevance of a thorough ethicial assessment of algorithms used by both public and private institutions, _especially_ in an educational setting. In addition, it brings again under attention the relevance of adequate technical training and digital skills of public administration officials who are, in case of lack of knowledge, often still highly depend on third party providers that might have less for the ethical implications of their algorithm.
 
 # II) Methodological approach:
 
