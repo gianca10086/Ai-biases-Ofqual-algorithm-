@@ -255,7 +255,7 @@ Thirdly, because of the low differences between the different grade distribution
 
 > Policy Implications 
 
-Firstly, the use of educational algorithms that give great value to historical school data, as the Ofqual algorithm did, brings with it the danger of favouring certain types of school above others, failing to take personal student characteristics into account. First, we find, although statistically insignificant, some evidence that the algorithm slightly advantages independent schools. This is a finding in line with earlier studies of the algorithm (Haines 2020; Nye and Thompson 2020). Second, we find that the 15 pupil-limit for using CAG (teacher predicted grades) is a clear advantage to schools with small class sizes, which is very substantially more common among independent schools.
+Firstly, the use of educational algorithms that give great value to historical school data, as the Ofqual algorithm did, brings with it the danger of favouring certain types of school above others, failing to take personal student characteristics into account. We find, although statistically insignificant, some evidence that the algorithm slightly advantages independent schools. Second, we find that the 15 pupil-limit for using CAG (teacher predicted grades) is a clear advantage to schools with small class sizes, which is very substantially more common among independent schools.
 
 Secondly, even if the algorithm is not significantly biased in its treatment of independent and state schools, it must be stressed that the schools-based allocation of grades to individual students is enormously inappropriate. Pupils are graded by their own and school's statistical background, not their own work and merit. Much like with criminal justice, one cannot do away with trial based on the individual case/personal actions in favour of just sentencing anyone who is ‘statistically likely’ to commit a crime. This approach makes it impossible for students from unlikely/disadvantaged students to significantly outperform their predictions, even though this happens, especially among immigrant students who tend to attend state schools. 
 
@@ -263,7 +263,7 @@ All in all, it is the assigning life-changing grades to individuals based on sta
 
 >  Suggestions for further research
 
-Firstly, since we only based our studies on students results in history it could be potentially enriching to apply the algorithm for other school subjects and determine whether certain subjects are more affected than others. For example, the Guardian found that the algorithm has different accuracy levels for the subjects "English" and "Maths" (Hern 2020).
+Firstly, since we only based our studies on students results in history it could be potentially enriching to apply the algorithm for other school subjects and determine whether certain subjects are more affected than others. For example, the Guardian found that the algorithm has different accuracy levels for the subjects "English" and "Maths" (Hern 2020a).
 
 Secondly, Ofqual is only on example among others. So it would also be interested to make a cross comparison between different countries educational algorithm's systems. We could for instance take the example of the former APB algorith in France. 
 
