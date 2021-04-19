@@ -14,6 +14,8 @@ Our Hypothesis was that the algorithm was either strongly push results downwards
 
     import pandas as pd
     import numpy as np
+    
+# Name Categories
 
     type_descriptor = {
        'year': 'int',
