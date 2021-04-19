@@ -1,4 +1,4 @@
-# Ai-biases-Ofqual-algorithm-
+# Decoding-Biases-in-AI-Ofqual-algorithm-
 
 # I) Introduction: 
 
