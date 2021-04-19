@@ -247,7 +247,7 @@ Predicted grades data: these were not published by the government although offic
 
 Despite some partial limitations till found how the algorithm indeed tends to be biased towards private schools. This is problematic because this... 
 
-> Implications 
+> Policy Implications 
 
 a. Finding: some (but statistically not too significant) evidence that the algorithm slightly advantages independent schools
 
@@ -255,7 +255,7 @@ b.	Relative lack of independent school data makes results less accurate and migh
 
 c.	15 pupil limit for using CAG (teacher predicted grades) is a clear advantage to schools with small class sizes, which is very substantially more common among independent schools
 
-d.	Policy Implications: even if the algorithm is not significantly biased in its treatment of independent and state schools, it must be stressed that the schools-based allocation of grades to individual students is enormously inappropriate. Pupils are graded by their statistical background, not their own work and merit. Much like with criminal justice, one cannot do away with trial based on the individual case/personal actions in favour of just sentencing anyone who is ‘statistically likely’ to commit a crime. This approach makes it impossible for students from unlikely/disadvantaged students to significantly outperform their predictions, even though this happens, especially among immigrant students who tend to attend state schools. 
+d.	Even if the algorithm is not significantly biased in its treatment of independent and state schools, it must be stressed that the schools-based allocation of grades to individual students is enormously inappropriate. Pupils are graded by their statistical background, not their own work and merit. Much like with criminal justice, one cannot do away with trial based on the individual case/personal actions in favour of just sentencing anyone who is ‘statistically likely’ to commit a crime. This approach makes it impossible for students from unlikely/disadvantaged students to significantly outperform their predictions, even though this happens, especially among immigrant students who tend to attend state schools. 
 
 All in all, it is the assigning life-changing grades to individuals based on statistical data that makes this policy and therefore the algorithm inappropriate. Algorithms and AI have great potential to aid governments but it must be realised that not all governmental functions are suitable for automatisation. 
 
