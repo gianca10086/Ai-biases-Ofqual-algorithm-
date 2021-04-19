@@ -2,11 +2,17 @@
 
 # I) Introduction: 
 
-In 2020, Ofqual, the English regulator of qualifications, exams and tests in England produced an algorithm trying to combat glade inflation and moderate teacher-predicted grades for A levels, after examinations were cancelled in the COVID-19 pandemic. Teachers found that nearly 40% of their A-levels assessments downgraded by the algorithm (Adams et al. 2020) and independent schools were favoured disporportionately above publicly funded schools (Nye and Thompson 2020).
+In 2020, Ofqual, the English regulator of qualifications, exams and tests in England produced an algorithm trying to combat glade inflation and moderate teacher-predicted grades for A levels, after examinations were cancelled in the COVID-19 pandemic. Teachers found that nearly 40% of their A-levels assessments downgraded by the algorithm (Adams et al. 2020) and independent schools were favoured disproportionately above publicly funded schools (Haines 2020; Nye and Thompson 2020).
 
-The algorithm, officially titled "Ofqual's Direct Centre Performance model" works as follows. It is based on the record of school being assessed. Firstly, the examination centre of each school provides a list of teacher predicted grades (centre assessed grades, CAGs). The students of each class were then placed in rank order on the basis of their predicted grade. Secondly, for classes with more than 15 students, the historical results of the school were also consulted. Going back three years, the average number of students getting each grade (A*, B, C, D, E, U, with A* being the highest attainable and U denoting "unclassified, or in other words "fail") is being added into the calculation. Thirdly, if this data was available, the calculation could be further enhanced on the basis of the historical data of the class's prior attainment 
+The algorithm, officially titled "Ofqual's Direct Centre Performance model" works as follows. It is based on the record of school being assessed. Firstly, the examination centre of each school provides a list of teacher predicted grades (centre assessed grades, CAGs). The students of each class is then placed in rank order on the basis of their predicted grade. Secondly, for classes with more than 15 students, the historical results of the school were also consulted. Going back three years, the average number of students getting each grade (A*, A, B, C, D, E, and U, with A* being the highest attainable and U denoting "unclassified, or in other words "fail") is being added into the calculation. Thirdly, if this data was available, the calculation could be further enhanced on the basis of the historical data of the class's prior attainment in their GSCE's. (Hern 2020b).
 
-Our Hypothesis was that the algorithm was either strongly push results downwards across all schools or push the results of independent schools upwards. We found that the algorithm had a tendency to push results upwards. There was a slightly stronger upward trend for independent schools, but this was not statistically greatly significant, however, given that very small classes’ data were masked by the government for data protection reasons, almost 2x as many independent schools’ data was missing from the calculation than maintained school data, indicating that the difference might be stronger in real life.
+In his study, Haines found that the Ofqual algorithm skewes the grades as well upwards as downwards (Haines 2020). In other words, it hollows out the middle of the grade distribution for students, pushing certain students up and other students down based on their school's historical data. The main aim of this study is, next to learning more about the algorithm in general, to find whether this bias can be found when analysing the functioning of the algorithm for private schools in comparison to state schools. This brought us to our main hypothesis:
+
+H1. The algorithm either strongly pushes results downwards across all schools or pushes the results of independent schools upwards. 
+
+The main finding of our analysis is that the algorithm had a tendency to push results upwards. There was a slightly stronger upward trend for independent schools, but this was not statistically greatly significant. However, given that very small classes’ data were masked by the government for data protection reasons, almost 2x as many independent schools’ data was missing from the calculation than maintained school data, indicating that the difference might be stronger in real life.
+
+Our study underlines the relevance of a thorhough ethicial assessment of algorithms used by both public and private institutions, _especially_ in an educational setting. In addition, it brings again under attention the relevance of adequate technical training and digital skills of public administration officials who are, in case of lack of knowledge, often still highly depend on third party providers that might have less for the ethical implications of their algorithm.
 
 # II) Methodological approach:
 
@@ -15,7 +21,7 @@ Our Hypothesis was that the algorithm was either strongly push results downwards
     import pandas as pd
     import numpy as np
     
-# Name Categories
+# Name Categories and variable types
 
     type_descriptor = {
        'year': 'int',
@@ -34,7 +40,7 @@ Our Hypothesis was that the algorithm was either strongly push results downwards
        'Fail/No results': 'float'
     }
 
-# Load the data files (historical school and subject data from England and Wales, from 2017 to 2019 )
+# Load the data files (historical school and subject data from England and Wales, from 2017 to 2019)
 
     dt_2017 = pd.read_csv("data-2017.csv", dtype=type_descriptor)
     dt_2018 = pd.read_csv("data-2018.csv", dtype=type_descriptor)
@@ -49,7 +55,7 @@ Our Hypothesis was that the algorithm was either strongly push results downwards
     # dt_2019 = dt_2019.head(100)
     
 
-# Link schools to unique ID number  
+# Link schools to their unique ID number  
 
     ls_schools = list(
         set(dt_2017['URN'].unique()) &
@@ -57,7 +63,7 @@ Our Hypothesis was that the algorithm was either strongly push results downwards
         set(dt_2019['URN'].unique())
      )
 
-# Use 2019 data as test data (as 2020 results are unvailable)
+# Use 2019 data as the test data (as 2020 results are unvailable)
 
     dt_test = dt_2019
 
@@ -159,9 +165,9 @@ The algorithm is defined as follows:
         
         # j indicates the school
         
-        # C[k,j] is the historical grade distribution of grade at the school (centre) over the last three years, 2017-19
+        # C[k,j] is the historical grade distribution of grade at the school (centre) over the last three years, 2017-19.
         
-        # q[k,j] is the predicted grade distribution based on the class’s prior attainment at GCSEs. A class with mostly 9s (the top grade) at GCSE will get a lot of predicted A*s; a class with mostly 1s at GCSEs will get a lot of predicted Us.
+        # q[k,j] is the predicted grade distribution based on the class’s prior attainment at GCSEs. This is where the pupils' own ability comes in. A class with mostly 9s (the top grade) at GCSE will get a lot of predicted A*s; a class with mostly 1s at GCSEs will get a lot of predicted Us. This is where the pupils' own ability comes in.
         
         # p[k,j] is the predicted grade distribution of the previous years, based on their GCSEs. You need to know that because, if previous years were predicted to do poorly and did well, then this year might do the same.
         
@@ -229,30 +235,29 @@ The algorithm is defined as follows:
 
 > Missing data (state schools) 16.50%
 
-a.	We reject the hypothesis that the algorithm pushes results downwards
+Our main hypothesis was:
 
-b.	We find that algorithm seems to raise grades slightly however, this effect is a stronger for private schools (see the 3.69% increase in As as opposed to 1.43% for state schools), however, given that we are below 5% differences, statistical relevance is low. 
+H1. The algorithm either strongly pushes results downwards across all schools or pushes the results of independent schools upwards. 
 
-c.	Independent schools have more missing data, which makes the calculation of difference between their predicted and actual 2019 grades less accurate.
+a.	Our findings allow us to reject the hypothesis that the algorithm pushes results downwards.
+
+b.	We find that algorithm seems to raise grades slightly however. An effect that is a stronger for private schools (see the 3.69% increase in As as opposed to 1.43% for state schools), however, given that we are below 5% differences, statistical relevance is low.
 
 # IV) Limitations of the study:  
 
-The study unfortunately lacked a non negligeable amount of real historical data. A lot of schools couldn't by law publish their data as some classes were simply too small, which could have had some drawbacks in terms of the privacy of the concerned studenst, who would have likely been recognized by their results. This eventually forced us to resort to use an abundant amount of proxy data. It becomes clear that as well a relative lack of independent school data makes results less accurate and might (although not necessarily) hide a greater advantage. 
+Firstly, the study unfortunately lacked a non-negligible amount of real historical data. A lot of schools could not by law publish their data as some classes were simply too small, which could have had some drawbacks in terms of the privacy of the concerned students, who would have likely been recognized by their results. This eventually forced us to resort to use an abundant amount of proxy data. It becomes clear that as well a relative lack of independent school data makes results less accurate and might - although not necessarily - hide an even greater advantage for private schools under the Ofqual algorithm. For instance, the overprediction and underprediction of grades were based on the assumptions made by former Ofqual studies were it was assumed that on average teachers tended to over predicted their own students grades by 20 to 40 per cent higher, compared to what they would in reality score at the exam.
 
-For instance the overprediction and underprediction of grades were based in the assumptions made by former Ofqual studies were it was assumed that on average teachers tended to over predicted thei won students grades by 20 to 40% higher compared to what they would iodeally score at the exam.
+Secondly, the predicted grades data were not published by the government. Where the predicted grades are officially based on GCSE results, which are available, it is worth noting that pupil movement between KS4 (GCSEs) and KS% (A-levels) between schools would make the historical GCSE data only partially accurate. That being said, had we had more time, we would have used school GCSE data as the next best option in our calculations. 
 
-Predicted grades data: these were not published by the government although officially were based on GCSE results. GCSE results are available although it is worth noting that pupil movement between KS4 (GCSEs) and KS% (A-levels) between schools would make the historical GCSE data only partially accurate. That being said, had we had more time, we would have used school GCSE data as the next best option in our calculations. 
-
+Thirdly, because of the low differences between the different grade distributions for private and state schools, the results in this study can not be generalised. Nevertheless, the findings of our study co-align with earlier studies that analysed the Ofqual algorithm (Haines 2020; Hern 2020a; Hern 2020b; Birch 2020; James 2020)
 
 # V) Implications and suggestions for further research:
 
 > Policy Implications 
 
-a.  We find, although statistically insignificant, some evidence that the algorithm slightly advantages independent schools. This is a finding in line with earlier studies of the algorithm (Haines 2020).
+a.  The use of educational algorithms that give great value to historical school data, as the Ofqual algorithm did, brings with it the danger of favouring certain types of school above others, failing to take personal student characteristics into account. First, we find, although statistically insignificant, some evidence that the algorithm slightly advantages independent schools. This is a finding in line with earlier studies of the algorithm (Haines 2020; Nye and Thompson 2020). Second, we find that the 15 pupil-limit for using CAG (teacher predicted grades) is a clear advantage to schools with small class sizes, which is very substantially more common among independent schools.
 
-b.  15 pupil limit for using CAG (teacher predicted grades) is a clear advantage to schools with small class sizes, which is very substantially more common among independent schools.
-
-d.	Even if the algorithm is not significantly biased in its treatment of independent and state schools, it must be stressed that the schools-based allocation of grades to individual students is enormously inappropriate. Pupils are graded by their statistical background, not their own work and merit. Much like with criminal justice, one cannot do away with trial based on the individual case/personal actions in favour of just sentencing anyone who is ‘statistically likely’ to commit a crime. This approach makes it impossible for students from unlikely/disadvantaged students to significantly outperform their predictions, even though this happens, especially among immigrant students who tend to attend state schools. 
+b.  Even if the algorithm is not significantly biased in its treatment of independent and state schools, it must be stressed that the schools-based allocation of grades to individual students is enormously inappropriate. Pupils are graded by their own and school's statistical background, not their own work and merit. Much like with criminal justice, one cannot do away with trial based on the individual case/personal actions in favour of just sentencing anyone who is ‘statistically likely’ to commit a crime. This approach makes it impossible for students from unlikely/disadvantaged students to significantly outperform their predictions, even though this happens, especially among immigrant students who tend to attend state schools. 
 
 All in all, it is the assigning life-changing grades to individuals based on statistical data that makes this policy and therefore the algorithm inappropriate. Algorithms and AI have great potential to aid governments but it must be realised that not all governmental functions are suitable for automatisation. 
 
@@ -275,14 +280,18 @@ We are especially grateful for Tom Haines and Peter Kemp who have very kindly he
 
 Adams et al. (2020). A-level results: almost 40% of teacher assessments in England downgraded. The Guardian. Available online at: https://www.theguardian.com/education/2020/aug/13/almost-40-of-english-students-have-a-level-results-downgraded.
 
+Birch, J. (2020). Exam Result Scandal. Harvard News Analysis. Available online at: https://www.harvard.co.uk/why-we-cant-blame-tech-for-the-exam-result-scandal/.
+
 Haines, T. S. F. (2020). A-Levels: The Model is not the Student. Personal blog. Available online at: https://thaines.com/post/alevels2020.
 
-Hern, A. (2020). Do the maths: why England's A-level grading system is unfair. The Guardian. Available online at: https://www.theguardian.com/education/2020/aug/14/do-the-maths-why-englands-a-level-grading-system-is-unfair
+Hern, A. (2020a). Do the maths: why England's A-level grading system is unfair. The Guardian. Available online at: https://www.theguardian.com/education/2020/aug/14/do-the-maths-why-englands-a-level-grading-system-is-unfair.
 
-Nye, P. and Thomson, D. (2020). A-level results 2020: Why independent schools have done well out of this year's awarding process. FFT Education Datalab. Available online here: https://ffteducationdatalab.org.uk/2020/08/a-level-results-2020-why-independent-schools-have-done-well-out-of-this-years-awarding-process/
+Hern A. (2020b). Ofqual's A-level algorithm: why did it fail to make the grade? The Guardian. Available online at: https://www.theguardian.com/education/2020/aug/21/ofqual-exams-algorithm-why-did-it-fail-make-grade-a-levels. 
 
-Quinn, B. and Adams, R. (2020). England exam rows timeline: was Ofqual warned of algorithm bias? https://www.theguardian.com/education/2020/aug/20/england-exams-row-timeline-was-ofqual-warned-of-algorithm-bias
+James, R. (2020). Pkj = (1-rj)Ckj + rj(Ckj + qkj – Pkj). Flourish. Available online at: https://flourishworld.com/pkj-1-rjckj-rjckj-qkj-pkj/.
 
-Wikipedia (2021). Ofqual exam results algorithm. Available online at: https://en.wikipedia.org/wiki/Ofqual_exam_results_algorithm
+Nye, P. and Thomson, D. (2020). A-level results 2020: Why independent schools have done well out of this year's awarding process. FFT Education Datalab. Available online here: https://ffteducationdatalab.org.uk/2020/08/a-level-results-2020-why-independent-schools-have-done-well-out-of-this-years-awarding-process/.
 
-Data: https://www.compare-school-performance.service.gov.uk/download-data?currentstep=region&downloadYear=2016-2017&regiontype=all&la=0
+Quinn, B. and Adams, R. (2020). England exam rows timeline: was Ofqual warned of algorithm bias? https://www.theguardian.com/education/2020/aug/20/england-exams-row-timeline-was-ofqual-warned-of-algorithm-bias.
+
+Raw data: https://www.compare-school-performance.service.gov.uk/download-data?currentstep=region&downloadYear=2016-2017&regiontype=all&la=0
