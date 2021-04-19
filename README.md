@@ -278,20 +278,20 @@ We are especially grateful for Tom Haines and Peter Kemp who have very kindly he
 
 # Sources:
 
-Adams et al. (2020). A-level results: almost 40% of teacher assessments in England downgraded. The Guardian. Available online at: https://www.theguardian.com/education/2020/aug/13/almost-40-of-english-students-have-a-level-results-downgraded.
+Adams et al. (2020). "A-level results: almost 40% of teacher assessments in England downgraded". The Guardian. Available online at: https://www.theguardian.com/education/2020/aug/13/almost-40-of-english-students-have-a-level-results-downgraded.
 
-Birch, J. (2020). Exam Result Scandal. Harvard News Analysis. Available online at: https://www.harvard.co.uk/why-we-cant-blame-tech-for-the-exam-result-scandal/.
+Birch, J. (2020). "Exam Result Scandal". Harvard News Analysis. Available online at: https://www.harvard.co.uk/why-we-cant-blame-tech-for-the-exam-result-scandal/.
 
-Haines, T. S. F. (2020). A-Levels: The Model is not the Student. Personal blog. Available online at: https://thaines.com/post/alevels2020.
+Haines, T. S. F. (2020). "A-Levels: The Model is not the Student". Personal blog. Available online at: https://thaines.com/post/alevels2020.
 
-Hern, A. (2020a). Do the maths: why England's A-level grading system is unfair. The Guardian. Available online at: https://www.theguardian.com/education/2020/aug/14/do-the-maths-why-englands-a-level-grading-system-is-unfair.
+Hern, A. (2020a). "Do the maths: why England's A-level grading system is unfair". The Guardian. Available online at: https://www.theguardian.com/education/2020/aug/14/do-the-maths-why-englands-a-level-grading-system-is-unfair.
 
-Hern A. (2020b). Ofqual's A-level algorithm: why did it fail to make the grade? The Guardian. Available online at: https://www.theguardian.com/education/2020/aug/21/ofqual-exams-algorithm-why-did-it-fail-make-grade-a-levels. 
+Hern A. (2020b). "Ofqual's A-level algorithm: why did it fail to make the grade?" The Guardian. Available online at: https://www.theguardian.com/education/2020/aug/21/ofqual-exams-algorithm-why-did-it-fail-make-grade-a-levels. 
 
-James, R. (2020). Pkj = (1-rj)Ckj + rj(Ckj + qkj – Pkj). Flourish. Available online at: https://flourishworld.com/pkj-1-rjckj-rjckj-qkj-pkj/.
+James, R. (2020). "Pkj = (1-rj)Ckj + rj(Ckj + qkj – Pkj)". Flourish. Available online at: https://flourishworld.com/pkj-1-rjckj-rjckj-qkj-pkj/.
 
-Nye, P. and Thomson, D. (2020). A-level results 2020: Why independent schools have done well out of this year's awarding process. FFT Education Datalab. Available online here: https://ffteducationdatalab.org.uk/2020/08/a-level-results-2020-why-independent-schools-have-done-well-out-of-this-years-awarding-process/.
+Nye, P. and Thomson, D. (2020). "A-level results 2020: Why independent schools have done well out of this year's awarding process". FFT Education Datalab. Available online here: https://ffteducationdatalab.org.uk/2020/08/a-level-results-2020-why-independent-schools-have-done-well-out-of-this-years-awarding-process/.
 
-Quinn, B. and Adams, R. (2020). England exam rows timeline: was Ofqual warned of algorithm bias? https://www.theguardian.com/education/2020/aug/20/england-exams-row-timeline-was-ofqual-warned-of-algorithm-bias.
+Quinn, B. and Adams, R. (2020). "England exam rows timeline: was Ofqual warned of algorithm bias?" https://www.theguardian.com/education/2020/aug/20/england-exams-row-timeline-was-ofqual-warned-of-algorithm-bias.
 
-Raw data: https://www.compare-school-performance.service.gov.uk/download-data?currentstep=region&downloadYear=2016-2017&regiontype=all&la=0
+Raw data: https://www.compare-school-performance.service.gov.uk/download-data.
