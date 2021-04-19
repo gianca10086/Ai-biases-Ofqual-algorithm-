@@ -145,8 +145,8 @@ As the real grades for 2020 werent published by the UK government, we decided to
                 (Ckj_value + qkj_value_GCSE - pkj_value_GCSE)
         dt_schools.at[idx, "Pkj_error_" + grade] = Pkj_value - R_value
 
-
-        # Pkj = (1-rj)Ckj + rj(Ckj + qkj - pkj)
+        Pkj = (1-rj)Ckj + rj(Ckj + qkj - pkj)
+       
 
 
 # The algorithm 
