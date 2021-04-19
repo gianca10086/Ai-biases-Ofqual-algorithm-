@@ -235,6 +235,9 @@ Based on the precedent results which hypothesis can we confirm and which one can
 
 - we can accept the first: 
 
+This means that a student is more likely to be judged by the overall performance  of its school during time of its school (historical distribution = CKj) instead of its own performance.
+
+
 - We partially accept the second (in our results the algorithm only skews the distribution upwards and does not hollow out the middle).
 
 
