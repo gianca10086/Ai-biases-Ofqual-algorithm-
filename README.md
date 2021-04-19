@@ -133,11 +133,10 @@ for idx in range(len(ls_schools)):
 
         # this is weak assumption based on the expectation that GCSE
         
-        
- # grades will strongly correlate with A level marks
- 
         pkj_value_GCSE = Ckj_value
         qkj_value_GCSE = R_value
+        
+ # grades will strongly correlate with A level marks
 
         # Pkj
         Pkj_value = pkj_value
@@ -149,6 +148,7 @@ for idx in range(len(ls_schools)):
 
 
         # Pkj = (1-rj)Ckj + rj(Ckj + qkj - pkj)
+
 
 # The variables
 
@@ -170,32 +170,37 @@ for idx in range(len(ls_schools)):
         
         # P[k,j] is the result, which is the grade distribution for each grade k at each school j.
 
-dt_private_schools = dt_schools[dt_schools['is_private']]
-dt_state_schools = dt_schools[dt_schools['is_private'] != True]
 
-print("Prediction error")
-for grade in ls_grades:
-    print(
-        grade, "private:", "{:.2%}".format(
+# We identify and divide the schools into the categories into which they are registered 
+
+     dt_private_schools = dt_schools[dt_schools['is_private']]
+     dt_state_schools = dt_schools[dt_schools['is_private'] != True]
+
+     print("Prediction error")
+     for grade in ls_grades:
+         print(
+            grade, "private:", "{:.2%}".format(
             dt_private_schools['Pkj_error_' + grade].mean()),
         "state:",
         "{:.2%}".format(dt_state_schools['Pkj_error_' + grade].mean()),
-    )
+    
 
-percent_missing = dt_private_schools.isnull().sum() / \
-    len(dt_private_schools)
+# Finally we predicted the overall amount of missing data for each school category
 
-print("Missing data (private schools)",
-      "{:.2%}".format(percent_missing['Pkj_error_A*']))
+      percent_missing = dt_private_schools.isnull().sum() / \
+           len(dt_private_schools)
 
-percent_missing = dt_state_schools.isnull().sum() / \
-    len(dt_state_schools)
+      print("Missing data (private schools)",
+           "{:.2%}".format(percent_missing['Pkj_error_A*']))
 
-print("Missing data (state schools)", "{:.2%}".format(
-    percent_missing['Pkj_error_A*']))
+      percent_missing = dt_state_schools.isnull().sum() / \
+           len(dt_state_schools)
+
+     print("Missing data (state schools)", "{:.2%}".format(
+           percent_missing['Pkj_error_A*']))
 
 
-dt_schools.to_csv('test.csv')
+     dt_schools.to_csv('test.csv')
 
 
 
