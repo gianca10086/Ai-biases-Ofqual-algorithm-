@@ -114,7 +114,7 @@ Our Hypothesis was that the algorithm was either strongly push results downwards
         Ckj_value = dt_school_historic['R_' + grade].mean()
         # dt_schools.at[idx, "Ckj_" + grade] = Ckj_value
 
-        # generate made up data for predicted grades
+        
        
  # Creation of predicted data (proxy data) 
  
