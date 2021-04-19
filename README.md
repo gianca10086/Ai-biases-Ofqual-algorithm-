@@ -205,19 +205,19 @@ dt_schools.to_csv('test.csv')
 
 > Prediction error 
 
-A* private: 1.45% / state: 0.36%
+    # A* private: 1.45% / state: 0.36%
 
-A private: 3.69% / state: 1.43%
+    # A private: 3.69% / state: 1.43%
 
-B private: 2.17% / state: 2.90%
+    # B private: 2.17% / state: 2.90%
 
-C private: -3.36% / state: 0.67%
+    # C private: -3.36% / state: 0.67%
 
-D private: -3.19% / state: -3.05%
+    # D private: -3.19% / state: -3.05%
 
-E private: -1.03% / state: -2.04%
+    # E private: -1.03% / state: -2.04%
 
-F private: -0.26% / state: -0.54%
+    # F private: -0.26% / state: -0.54%
 
 > Missing data (private schools) 28.54%
 
