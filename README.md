@@ -61,45 +61,45 @@ type_descriptor = {
 )
 
 # use 2019 data as test data
-dt_test = dt_2019
+    dt_test = dt_2019
 
 # use year 2017-2018 to calculate historical grade distribution
 
-dt_historic = pd.concat([dt_2018, dt_2019])
+    dt_historic = pd.concat([dt_2018, dt_2019])
 
 # configuarion
 
-ls_grades = ['A*', 'A', 'B', 'C', 'D', 'E', 'F']
-rj = 0.7
+    ls_grades = ['A*', 'A', 'B', 'C', 'D', 'E', 'F']
+    rj = 0.7
 
 # helper columns
 
-dt_test["F"] = dt_test["Fail/No results"]
+    dt_test["F"] = dt_test["Fail/No results"]
+       for grade in ls_grades:
+       dt_test["R_" + grade] = dt_test[grade] / dt_test['Total entries']
+    dt_historic = dt_historic.replace('Supp', np.nan)
+    dt_historic["F"] = dt_historic["Fail/No results"]
     for grade in ls_grades:
-    dt_test["R_" + grade] = dt_test[grade] / dt_test['Total entries']
-dt_historic = dt_historic.replace('Supp', np.nan)
-dt_historic["F"] = dt_historic["Fail/No results"]
-for grade in ls_grades:
-    dt_historic["R_" + grade] = dt_historic[grade] / \
-        dt_historic['Total entries']
+       dt_historic["R_" + grade] = dt_historic[grade] / \
+          dt_historic['Total entries']
 
 # We establish the school table
 
-dt_schools = pd.DataFrame(ls_schools, columns=['URN'])
-dt_schools["is_private"] = False
+    dt_schools = pd.DataFrame(ls_schools, columns=['URN'])
+    dt_schools["is_private"] = False
 
 
 # We calculate C[k,j]
 
-for grade in ls_grades:
-    # dt_schools["Ckj_" + grade] = 0.0
-    # dt_schools["qkj_" + grade] = 0.0
-    # dt_schools["pkj_" + grade] = 0.0
-    # dt_schools["Pkj_" + grade] = 0.0
-    dt_schools["Pkj_error_" + grade] = 0.0
+    for grade in ls_grades:
+      # dt_schools["Ckj_" + grade] = 0.0
+      # dt_schools["qkj_" + grade] = 0.0
+      # dt_schools["pkj_" + grade] = 0.0
+      # dt_schools["Pkj_" + grade] = 0.0
+      dt_schools["Pkj_error_" + grade] = 0.0
 
-for idx in range(len(ls_schools)):
-    urn = ls_schools[idx]
+    for idx in range(len(ls_schools)):
+      urn = ls_schools[idx]
 
     dt_school_historic = dt_historic[dt_historic['URN'] == urn]
     dt_school_test = dt_test[dt_test['URN'] == urn]
