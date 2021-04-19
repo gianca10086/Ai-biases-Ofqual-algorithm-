@@ -38,14 +38,15 @@ type_descriptor = {
     'Fail/No results': 'float'
 }
 
-# load data files
-dt_2017 = pd.read_csv("data-2017.csv", dtype=type_descriptor)
-dt_2018 = pd.read_csv("data-2018.csv", dtype=type_descriptor)
-dt_2019 = pd.read_csv("data-2019.csv", dtype=type_descriptor)
+# We load the data files
 
-dt_2017 = dt_2017[dt_2017['Subject'] == 'History']
-dt_2018 = dt_2018[dt_2018['Subject'] == 'History']
-dt_2019 = dt_2019[dt_2019['Subject'] == 'History']
+    dt_2017 = pd.read_csv("data-2017.csv", dtype=type_descriptor)
+    dt_2018 = pd.read_csv("data-2018.csv", dtype=type_descriptor)
+    dt_2019 = pd.read_csv("data-2019.csv", dtype=type_descriptor)
+
+    dt_2017 = dt_2017[dt_2017['Subject'] == 'History']
+    dt_2018 = dt_2018[dt_2018['Subject'] == 'History']
+    dt_2019 = dt_2019[dt_2019['Subject'] == 'History']
 
     # dt_2017 = dt_2017.head(100)
     # dt_2018 = dt_2018.head(100)
@@ -53,10 +54,10 @@ dt_2019 = dt_2019[dt_2019['Subject'] == 'History']
     
 
 # get unique list of schools in all years
-ls_schools = list(
-    set(dt_2017['URN'].unique()) &
-    set(dt_2018['URN'].unique()) &
-    set(dt_2019['URN'].unique())
+    ls_schools = list(
+        set(dt_2017['URN'].unique()) &
+        set(dt_2018['URN'].unique()) &
+        set(dt_2019['URN'].unique())
 )
 
 # use 2019 data as test data
@@ -74,7 +75,7 @@ rj = 0.7
 # helper columns
 
 dt_test["F"] = dt_test["Fail/No results"]
-for grade in ls_grades:
+    for grade in ls_grades:
     dt_test["R_" + grade] = dt_test[grade] / dt_test['Total entries']
 dt_historic = dt_historic.replace('Supp', np.nan)
 dt_historic["F"] = dt_historic["Fail/No results"]
