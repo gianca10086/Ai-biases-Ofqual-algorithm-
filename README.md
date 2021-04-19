@@ -265,9 +265,9 @@ All in all, it is the assigning life-changing grades to individuals based on sta
 
 Firstly, since we only based our studies on students results in history it could be potentially enriching to apply the algorithm for other school subjects and determine whether certain subjects are more affected than others. For example, the Guardian found that the algorithm has different accuracy levels for the subjects "English" and "Maths" (Hern 2020a).
 
-Secondly, Ofqual is only on example among others. So it would also be interested to make a cross comparison between different countries educational algorithm's systems. We could for instance take the example of the former APB algorith in France. 
+Secondly, Ofqual is only on example among others. It would also be interested to conduct a comparative study between different countries educational algorithm's systems. We could for instance take the example of the former APB algorithm in France.
 
-Thirdly, we exclusively based our comparison on the binary distinction between independent/ private schools and state schools. Therefore It would be appropriate to enlarge this analysis and make a more detailed separation between schools types. 
+Thirdly, we exclusively based our comparison on the binary distinction between independent/private schools and state schools. However, schools can be differentiated on the basis of multiple other characteristics than their funding structure and further research could shed light on which other characteristics correlate with possible biased predicted outcomes.
 
 
 # Acknowledgments
