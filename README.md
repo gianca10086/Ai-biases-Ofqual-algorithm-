@@ -268,8 +268,6 @@ d.	Policy Implications: even if the algorithm is not significantly biased in its
 
 All in all, it is the assigning life-changing grades to individuals based on statistical data that makes this policy and therefore the algorithm inappropriate. Algorithms and AI have great potential to aid governments but it must be realised that not all governmental functions are suitable for automatisation. 
 
-> Suggestions 
-
 
 # Acknowledgments
 # Gabor Győrfi, Tom Haines (University of Bath) and Peter Kemp (King's College London).
