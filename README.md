@@ -65,8 +65,8 @@ Our Hypothesis was that the algorithm was either strongly push results downwards
 
     dt_historic = pd.concat([dt_2018, dt_2019])
 
- ls_grades = ['A*', 'A', 'B', 'C', 'D', 'E', 'F']
-    rj = 0.7
+    ls_grades = ['A*', 'A', 'B', 'C', 'D', 'E', 'F']
+       rj = 0.7
 
 # Create helper columns
 
@@ -78,6 +78,9 @@ Our Hypothesis was that the algorithm was either strongly push results downwards
     for grade in ls_grades:
        dt_historic["R_" + grade] = dt_historic[grade] / \
           dt_historic['Total entries']
+          
+          
+# Create school table 
 
     dt_schools = pd.DataFrame(ls_schools, columns=['URN'])
     dt_schools["is_private"] = False
