@@ -237,7 +237,7 @@ c.	Independent schools have more missing data, which makes the calculation of di
 
 # IV) Limitations of the study:  
 
-The study unfortunately lacked a non negligeable amount of real historical data. A lot of schools couldn't by law publish their data as some classes were simply too small, which could have had some drawbacks in terms of the privacy of the concerned studenst, who would have likely been recognized in their results. This eventually forced us to resort us to use an abundant amount of proxy data, whihc we adapted to observations and precent studies 
+The study unfortunately lacked a non negligeable amount of real historical data. A lot of schools couldn't by law publish their data as some classes were simply too small, which could have had some drawbacks in terms of the privacy of the concerned studenst, who would have likely been recognized by their results. This eventually forced us to resort to use an abundant amount of proxy data, which we adapted to the observations and previous Ofqual studies.
 
 For instance the overprediction and underprediction of grades were based in the assumptions made by former studies (quote study) were it was assumed that ojn average teachers tended to over predicted thei won students grades by 20 to 40% higher compared to what they would iodeally score at the exam.
 
